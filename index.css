@@ -25,9 +25,11 @@ nav.menutren{
 .menutren ul li{
     width: 120px;
     height: 100%;
-    padding-top: 15px;
     text-align: center;
     color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 .menutren ul li a{
     color: black;
@@ -52,7 +54,7 @@ nav.menutren{
     width: 160px;
     height: 100%;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 20px;
     cursor: pointer;
 }
 .dang_nhap--icon{
