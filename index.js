@@ -28,7 +28,7 @@ var accounts = [];
 
 register_icon.onclick = () =>{
     if(isRegister == false){
-        $("body").style.overflow = 'hidden';
+        $("body").style.overflowY = 'hidden';
         if(isOpenRegister == false){
             register_form.style.display = 'block';
             register_form.classList.remove("register-inactive");
@@ -40,7 +40,7 @@ register_icon.onclick = () =>{
 }
 submit_thoat.forEach(element => {
     element.onclick = ()=>{
-    $("body").style.overflow = 'scroll';
+    $("body").style.overflowY = 'scroll';
         register_form.classList.remove("register-active");
         register_form.classList.add("register-inactive");
         setTimeout(() => {
