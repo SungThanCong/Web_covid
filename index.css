@@ -7,6 +7,8 @@
 html{
     font-family: 'Nunito', sans-serif;
 }
+
+/*menu */
 nav.menutren{
     /* margin-left: 40px; */
     width: 100%;
@@ -17,6 +19,7 @@ nav.menutren{
     border: solid 2px rgb(190, 190, 190);
     position: fixed;
     z-index: 3;
+
 
 }
 .menutren ul{
@@ -64,6 +67,10 @@ nav.menutren{
     font-size: 30px;
 }
 
+/* main */
+.main{
+    /* padding-top: 100px; */
+}
 .main--part{
     width: 100%;
     height: 600px;
@@ -71,11 +78,12 @@ nav.menutren{
 }
 .main--banner_first{
     width: 100%;
-    height: 700px;
+    height: 650px;
     background-image: url(https://scontent.fsgn2-3.fna.fbcdn.net/v/t1.15752-9/225183766_2049528881868345_5511326628102188110_n.png?_nc_cat=106&ccb=1-4&_nc_sid=ae9488&_nc_ohc=Wlbv_AOVNDEAX-s0gNt&tn=aZB1x9ukfA7qpc2Q&_nc_ht=scontent.fsgn2-3.fna&oh=25f3dc0d7d96aa6ff5c033b5a197288e&oe=6133DF5B);
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 
 
 /* option1 */
@@ -197,4 +205,6 @@ nav.menutren{
     text-align: center;
     font-size: 30px;
     cursor: pointer;
+    z-index: 2;
 }
+

@@ -112,3 +112,12 @@ scroll_to_head.onclick = () =>{
      window.scrollTo({ top: 0, behavior: 'smooth' });
     
 }
+
+const menu = $('nav.menutren');
+
+window.addEventListener("scroll",function(){
+    var x = this.pageYOffset;
+    if(x>0 && x<(window.innerHeight -100)){
+        menu.style.bottom = `${x}px`;
+    }
+})
