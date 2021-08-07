@@ -18,7 +18,7 @@ nav.menutren{
     justify-content: space-between;
     border: solid 2px rgb(190, 190, 190);
     position: fixed;
-    z-index: 2;
+    z-index: 3;
 
 
 }
@@ -62,6 +62,7 @@ nav.menutren{
     text-align: center;
     padding-top: 20px;
     cursor: pointer;
+    
 }
 .dang_nhap--icon{
     font-size: 30px;
@@ -93,7 +94,7 @@ nav.menutren{
     bottom: 0;
     background-color: rgba(49, 49, 49, 0.432);
     display: none;
-
+    z-index: 3;
 }
 .register-active{
 
@@ -179,6 +180,10 @@ nav.menutren{
     font-size: 15px;
     background-color: rgba(0, 128, 0, 0.349);
     border-radius: none;
+}
+.submit-thoat button
+{
+    background-color:rgba(255, 24, 24, 0.76);
 }
 .register-form h2,
 .register-form-2 h2{

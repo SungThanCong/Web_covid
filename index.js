@@ -10,6 +10,7 @@ const form1 = $('.register-form');
 const form2 = $('.register-form-2');
 const trans = $$('.trans_register');
 const submit1 = $('.submit-1');
+const submit_thoat = $$('.submit-thoat');
 const submit2 = $('.submit-2');
 const user = $$('.username input');
 const pass = $$('.password input');
@@ -35,18 +36,20 @@ register_icon.onclick = () =>{
             report_error.innerHTML = `<br/>`;
             isOpenRegister = true;
         }
-        else{
-            $("body").style.overflow = 'scroll';
-            register_form.classList.remove("register-active");
-            register_form.classList.add("register-inactive");
-            setTimeout(() => {
-                register_form.style.display='none';
-            }, 700);
-            isOpenRegister = false;
-        }
     }
-    
 }
+submit_thoat.forEach(element => {
+    element.onclick = ()=>{
+    $("body").style.overflow = 'scroll';
+        register_form.classList.remove("register-active");
+        register_form.classList.add("register-inactive");
+        setTimeout(() => {
+            register_form.style.display='none';
+        }, 700);
+        isOpenRegister = false;
+    }
+});
+        
 
 trans[0].onclick = () =>{
     form1.classList.remove("register-active");
