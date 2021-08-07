@@ -62,9 +62,7 @@ nav.menutren{
 .dang_nhap--icon{
     font-size: 30px;
 }
-.main{
-    /* padding-top: 150px; */
-}
+
 .main--part{
     width: 100%;
     height: 600px;
@@ -73,7 +71,7 @@ nav.menutren{
 .main--banner_first{
     width: 100%;
     height: 800px;
-    background-image: url(https://scontent.fsgn2-1.fna.fbcdn.net/v/t1.15752-9/228834324_1010505706428859_2715243438912696469_n.png?_nc_cat=107&ccb=1-4&_nc_sid=ae9488&_nc_ohc=j8hIwXe6xS4AX-Vpa0K&_nc_ht=scontent.fsgn2-1.fna&oh=8038546fbf4adff99d6fab0d175d077d&oe=61350F9F);
+    background-image: url(https://scontent.fsgn2-3.fna.fbcdn.net/v/t1.15752-9/225183766_2049528881868345_5511326628102188110_n.png?_nc_cat=106&ccb=1-4&_nc_sid=ae9488&_nc_ohc=Wlbv_AOVNDEAX-s0gNt&tn=aZB1x9ukfA7qpc2Q&_nc_ht=scontent.fsgn2-3.fna&oh=25f3dc0d7d96aa6ff5c033b5a197288e&oe=6133DF5B);
     background-size: contain;
     background-repeat: no-repeat;
 }
