@@ -27,6 +27,7 @@ var accounts = [];
 
 register_icon.onclick = () =>{
     if(isRegister == false){
+        $("body").style.overflow = 'hidden';
         if(isOpenRegister == false){
             register_form.style.display = 'block';
             register_form.classList.remove("register-inactive");
@@ -35,6 +36,7 @@ register_icon.onclick = () =>{
             isOpenRegister = true;
         }
         else{
+            $("body").style.overflow = 'scroll';
             register_form.classList.remove("register-active");
             register_form.classList.add("register-inactive");
             setTimeout(() => {
@@ -75,6 +77,7 @@ submit1.onclick = () =>{
         register_icon.innerHTML = 
         `<span class="dang_nhap--icon"><a>${username}</a></span>`;
         isRegister = true;
+        $("body").style.overflow = 'scroll';
     }
     else{
         report_error[0].innerHTML = 'Tài khoản hoặc mật khẩu không chính xác';
@@ -117,7 +120,10 @@ const menu = $('nav.menutren');
 
 window.addEventListener("scroll",function(){
     var x = this.pageYOffset;
-    if(x>0 && x<(window.innerHeight -100)){
-        menu.style.bottom = `${x}px`;
+    if(x<=(window.innerHeight - 100)){
+        menu.style.top = `${window.innerHeight - x - 100}px`;
+    }
+    else{
+        menu.style.top = `0px`;
     }
 })
