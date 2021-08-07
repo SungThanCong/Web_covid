@@ -3,6 +3,7 @@
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
+// option-1
 const register_icon = $('.menutren--dang_nhap');
 const register_form = $('.register');
 const form1 = $('.register-form');
@@ -15,6 +16,7 @@ const pass = $$('.password input');
 const name_ = $('.name input');
 const email = $('.email input');
 const report_error = $$('.report_error');
+
 
 
 var isOpenRegister = false;
@@ -101,4 +103,12 @@ submit2.onclick = () =>{
         report_error[1].style.color ="green";
         report_error[1].innerHTML = 'Đăng kí thành công';
     }
+}
+
+// option-2
+const scroll_to_head = $('.scroll_to_head');
+
+scroll_to_head.onclick = () =>{
+     window.scrollTo({ top: 0, behavior: 'smooth' });
+    
 }

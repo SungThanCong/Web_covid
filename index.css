@@ -49,7 +49,8 @@ nav.menutren{
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
     text-shadow: 0px 5px 5px black;
-    color: rgba(0, 110, 255, 0.658);
+    /* color: rgba(0, 110, 255, 0.658); */
+    color: black;
 
 }
 .menutren--dang_nhap{
@@ -70,14 +71,14 @@ nav.menutren{
 }
 .main--banner_first{
     width: 100%;
-    height: 800px;
+    height: 700px;
     background-image: url(https://scontent.fsgn2-3.fna.fbcdn.net/v/t1.15752-9/225183766_2049528881868345_5511326628102188110_n.png?_nc_cat=106&ccb=1-4&_nc_sid=ae9488&_nc_ohc=Wlbv_AOVNDEAX-s0gNt&tn=aZB1x9ukfA7qpc2Q&_nc_ht=scontent.fsgn2-3.fna&oh=25f3dc0d7d96aa6ff5c033b5a197288e&oe=6133DF5B);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
 
-/* register */
+/* option1 */
 .register{
     position: fixed;
     top:0;
@@ -183,4 +184,17 @@ nav.menutren{
     font-size: 11px;
 }
 
-
+/* option2 */
+.scroll_to_head{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.541);
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    color:gray;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+}
