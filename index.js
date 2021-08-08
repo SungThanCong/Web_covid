@@ -56,10 +56,10 @@ particlesJS("particle-container", {
     },
     "move": {
       "enable": true,
-      "speed": 3,
+      "speed": 5,
       "direction": "top",
       "random": true,
-      "straight": false,
+      "straight": true,
       "out_mode": "out",
       "bounce": false,
       "attract": {
