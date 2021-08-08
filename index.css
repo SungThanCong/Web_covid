@@ -83,7 +83,12 @@ nav.menutren{
     background-repeat: no-repeat;
 }
 
-
+#particle-container{
+    position: absolute;
+ 	width: 100%;
+ 	height: 100%;
+     z-index: 2;
+}
 
 /* option1 */
 .register{
