@@ -13,14 +13,16 @@ nav.menutren{
    
     width: 100%;
     height: 100px;
-    background-color: rgba(241, 241, 241, 0.795);
+    /* background-color: rgba(241, 241, 241, 0.795); */
+    background: linear-gradient(to right,rgba(231, 231, 31, 0.678) , rgba(199, 132, 9, 0.678), rgba(231, 231, 31, 0.678) , rgb(199, 132, 9,0.678),rgb(231, 231, 31,0.678) , rgb(199, 132, 9,0.678));
     display: flex;
     justify-content: space-between;
-    border: solid 2px rgb(190, 190, 190);
+    border: solid 1px rgba(0, 0, 0, 0.486);
     position: fixed;
     z-index: 3;
     bottom: 0;
-
+    color:black;
+    
 }
 .menutren ul{
     display: flex;
@@ -31,13 +33,13 @@ nav.menutren{
     margin-left: 30px;
     height: 100%;
     text-align: center;
-    color: black;
+
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 .menutren ul li div{
-    color: black;
+  
     font-weight: 800;
     font-size: 17px;
     transition: 0.5s;
@@ -55,7 +57,7 @@ nav.menutren{
     font-size: 20px;
     text-shadow: 0px 5px 5px black;
     /* color: rgba(0, 110, 255, 0.658); */
-    color: black;
+    
 
 }
 .menutren--dang_nhap{
@@ -140,9 +142,16 @@ nav.menutren{
     color: rgb(80, 80, 80);
 }
 .main--part--content--tinh_hinh_dich p{
-    margin-top: 70px;
+    margin-top: 40px;
+    padding-top: 10px;
+    height: 40px;
     display: block;
-   margin-left: 28%;
+   margin-left: 26%;
+   width: 400px;
+   text-align: center;
+   background-color: rgba(255, 136, 0, 0.233);
+   border-radius: 50%;
+   
 }
 .main--part--content--tinh_hinh_dich--the_gioi > h2{
     background-color: rgba(44, 143, 255, 0.829);
@@ -309,6 +318,79 @@ nav.menutren{
 }
 .main--part_4 .main--part--content--hinh_1 img{
     margin-bottom: 10px;
+}
+.main--part_5{
+    width: 100%;
+    height: 800px;
+    background-color: white;
+    background-size: cover;
+ 
+}
+.main--part_5 .main--part--title{
+    font-family: 'Style Script', cursive;
+    font-size: 30px;
+    padding:30px;
+}
+.main--part_5 .main--part--content{
+    height: 500px;
+    width: 100%;
+    background:linear-gradient(to right,orange,rgba(255, 223, 165, 0.925),orange,rgba(255, 223, 165, 0.925),orange,rgba(255, 223, 165, 0.925),orange);
+    padding-left: 250px;
+    padding-right: 250px;
+    word-wrap: break-word;
+    position: relative;
+}
+.main--part--content--next{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.589);
+    border-radius: 50%;
+    text-align: center;
+    padding-top:30px;
+    font-size: 30px;
+    right: 10px;
+    top: 200px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.main--part--content--next:hover{
+    background-color: white;
+}
+.main--part_5 .main--part--content--cau_chuyen_1 img{
+    float: left;
+    margin-right: 20px;
+}
+
+.main--part_5 .main--part--content--cau_chuyen_1 > p{
+    font-size: 20px;
+    padding-top: 10px;
+    font-weight: 600;
+    font-family: 'Roboto Slab', serif;
+}
+.main--part_6{
+    width: 100%;
+    height: 800px;
+    background-image: url(img/p6/hinh-nen-2.gif);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.main--part_6 .main--part--title{
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 20px;
+}
+.main--part_6 .main--part--content{
+    width: 100%;
+    height: 600px;
+    background: rgba(255, 255, 255, 0.336);
+}
+.main--part--content--man_hinh{
+    width: 70%;
+    height: 100%;
+    background: black;
+    margin:auto;
 }
 /* footer */
 .footer{

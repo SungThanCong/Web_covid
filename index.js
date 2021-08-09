@@ -128,8 +128,12 @@ subjects[2].onclick = ()=>{
 subjects[3].onclick = ()=>{
   window.scrollTo({ top: 2900, behavior: 'smooth' });
 }
-
-
+subjects[4].onclick = ()=>{
+  window.scrollTo({ top: 3650, behavior: 'smooth' });
+}
+subjects[5].onclick = ()=>{
+  window.scrollTo({ top: 4450, behavior: 'smooth' });
+}
 // option-2
 const register_icon = $('.menutren--dang_nhap');
 const register_form = $('.register');
