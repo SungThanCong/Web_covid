@@ -125,7 +125,9 @@ subjects[1].onclick = ()=>{
 subjects[2].onclick = ()=>{
   window.scrollTo({ top: 2100, behavior: 'smooth' });
 }
-
+subjects[3].onclick = ()=>{
+  window.scrollTo({ top: 2900, behavior: 'smooth' });
+}
 
 
 // option-2
