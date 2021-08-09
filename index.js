@@ -112,8 +112,16 @@ particlesJS("particle-container", {
 });
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
+//option-1
+const subjects = $$('.menutren ul li');
 
-// option-1
+subjects[0].onclick = ()=>{
+  window.scrollTo({ top: 700, behavior: 'smooth' });
+}
+subjects[1].onclick = ()=>{
+  window.scrollTo({ top: 1400, behavior: 'smooth' });
+}
+// option-2
 const register_icon = $('.menutren--dang_nhap');
 const register_form = $('.register');
 const form1 = $('.register-form');
@@ -221,7 +229,7 @@ submit2.onclick = () =>{
     }
 }
 
-// option-2
+// option-3
 const scroll_to_head = $('.scroll_to_head');
 
 scroll_to_head.onclick = () =>{

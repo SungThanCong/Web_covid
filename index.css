@@ -35,13 +35,14 @@ nav.menutren{
     justify-content: center;
     flex-direction: column;
 }
-.menutren ul li a{
+.menutren ul li div{
     color: black;
     font-weight: 800;
     font-size: 17px;
     transition: 0.5s;
+    cursor: pointer;
 }
-.menutren ul li a:hover{
+.menutren ul li div:hover{
     color: red;
     
 }
@@ -72,7 +73,7 @@ nav.menutren{
 
 .main--banner_first{
     width: 100%;
-    height: 750px;
+    height: 770px;
     background-image: url(https://f19-zpc.zdn.vn/8872822362531819088/6d8611d6df0828567119.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -88,6 +89,7 @@ nav.menutren{
     height: 700px;
     background-image: url(img/hinh-1.png);
     background-size: cover;
+
 }
 .main--part_1 .main--part--title{
     text-align: center;
@@ -125,7 +127,7 @@ nav.menutren{
 }
 .main--part--content--tinh_hinh_dich--the_gioi span:nth-child(3),
 .main--part--content--tinh_hinh_dich--trong_nuoc span:nth-child(3){
-    color: rgb(255, 102, 0);
+    color: rgb(255, 115, 0);
 }
 .main--part--content--tinh_hinh_dich--the_gioi span:nth-child(4),
 .main--part--content--tinh_hinh_dich--trong_nuoc span:nth-child(4){
@@ -153,6 +155,46 @@ nav.menutren{
     color: white;
     display: block;
     margin-bottom: 20px;
+}
+
+.main--part_2{
+    display: block;
+    width: 100%;
+    height: 700px;
+    background-image: url(img/hinh-2.png);
+    background-size: cover;
+    position: relative;
+}
+.main--part_2 .main--part--title{
+    width: 800px;
+    height: 300px;
+    position: absolute;
+    right: 0;
+    top: 100px;
+    font-size: 30px;
+}
+.main--part_2 .main--part--content ul{
+    position: absolute;
+    width: 550px;
+    height: 350px;
+    right: 150px;
+    top: 250px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.main--part_2 .main--part--content ul div{
+    background-color: rgba(100, 253, 151, 0.637);
+    height: 50px;
+    font-size: 25px;
+    padding-top: 10px;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.main--part_2 .main--part--content ul div:hover{
+    background: rgba(11, 167, 11, 0.705);
 }
 /* footer */
 .footer{
