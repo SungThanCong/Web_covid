@@ -28,6 +28,7 @@ nav.menutren{
 }
 .menutren ul li{
     width: 120px;
+    margin-left: 30px;
     height: 100%;
     text-align: center;
     color: black;
@@ -87,8 +88,8 @@ nav.menutren{
     display: block;
     width: 100%;
     height: 700px;
-    background-image: url(img/hinh-1.png);
     background-size: cover;
+
 
 }
 .main--part_1 .main--part--title{
@@ -97,25 +98,26 @@ nav.menutren{
     width: 100%;
     height: 70px;
     padding-top: 70px;
-    font-family: 'Georama', sans-serif;
+    font-family: 'Anton', sans-serif;
 }
 
 .main--part--content--tinh_hinh_dich{
     width: 100%;
     padding-top:110px;
-    padding-left: 20%;
+    padding-left: 15%;
     height: 700px;
 }   
 .main--part--content--tinh_hinh_dich--trong_nuoc{
     float: left;
     width: 40%;
-    border-right: solid 1px black;
     text-align: center;
+    background-color: rgba(255, 0, 0, 0.397);
 }
 .main--part--content--tinh_hinh_dich--the_gioi{
     display: inline-block;
     width: 40%;
     text-align: center;
+    background-color: rgba(78, 175, 255, 0.397);
 }
 .main--part--content--tinh_hinh_dich span{
     display: block;
@@ -138,40 +140,43 @@ nav.menutren{
     color: rgb(80, 80, 80);
 }
 .main--part--content--tinh_hinh_dich p{
-    margin-top: 50px;
+    margin-top: 70px;
     display: block;
-   margin-left: 26%;
+   margin-left: 28%;
 }
 .main--part--content--tinh_hinh_dich--the_gioi > h2{
-    background-color: rgba(79, 161, 255, 0.726);
-    border-radius: 10px;
+    background-color: rgba(44, 143, 255, 0.829);
+
     color: white;
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    
 }
 .main--part--content--tinh_hinh_dich--trong_nuoc> h2{
-    background-color: rgba(255, 79, 79, 0.726);
-    border-radius: 10px;
+    background-color: rgba(252, 59, 59, 0.726);
+
     color: white;
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .main--part_2{
     display: block;
     width: 100%;
     height: 700px;
-    background-image: url(img/hinh-2.png);
+    background-image: url(img/hinh-2-test.jpg);
     background-size: cover;
     position: relative;
+
 }
 .main--part_2 .main--part--title{
-    width: 800px;
+    width: 700px;
     height: 300px;
     position: absolute;
     right: 0;
     top: 100px;
     font-size: 25px;
+    font-family: 'Anton', sans-serif;
 }
 .main--part_2 .main--part--content ul{
     position: absolute;
@@ -185,7 +190,7 @@ nav.menutren{
     flex-direction: column;
 }
 .main--part_2 .main--part--content ul div{
-    background-color: rgba(100, 253, 151, 0.637);
+    background-color: rgba(255, 182, 47, 0.63);
     height: 50px;
     font-size: 22px;
     padding-top: 12px;
@@ -193,9 +198,10 @@ nav.menutren{
     font-weight: 600;
     cursor: pointer;
     transition: 0.5s;
+    color: black;
 }
 .main--part_2 .main--part--content ul div:hover{
-    background: rgba(11, 167, 11, 0.705);
+    background: orange;
 }
 
 
@@ -207,6 +213,8 @@ nav.menutren{
     background-size: cover;
     position: relative;
     overflow: hidden;
+    color: black;
+    
 }
 
 .main--part_3::before{
@@ -230,6 +238,7 @@ nav.menutren{
     top: 100px;
     font-size: 23px;
     text-align: center;
+    font-family: 'Anton', sans-serif;
 }
 .main--part_3 .main--part--content ul{
     position: absolute;
@@ -262,7 +271,8 @@ nav.menutren{
     background-size: cover;
     overflow: hidden;
 }.main--part_4 .main--part--title{
-    width: 100%;
+    width: 70%;
+    margin: auto;
     height: 200px;
     left: -200px;
     top: 100px;
@@ -270,11 +280,35 @@ nav.menutren{
     text-align: center;
     padding-top: 50px;
     color: rgba(182, 155, 0, 0.856);
+    border-bottom: solid 10px rgba(255, 178, 35, 0.842);
+    border-radius: 25px;
+    
+}
+.main--part_4 .main--part--title > h1{
+    font-family: 'Anton', sans-serif;
 }
 .main--part_4 .main--part--content{
-    background: linear-gradient(to right,yellow,green,yellow);
+    /* background: linear-gradient(to right,yellow,green,yellow); */
     width: 100%;
     height: 600px;
+    padding: 80px;
+    padding-left: 250px;
+    display: flex;
+}
+.main--part_4 .main--part--content--hinh_1{
+    width: 280px;
+    height: 490px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    margin-left: 50px;
+    background: linear-gradient(white,green,orange,white);
+    border-bottom: none;
+    font-family: 'Style Script', cursive;
+}
+.main--part_4 .main--part--content--hinh_1 img{
+    margin-bottom: 10px;
 }
 /* footer */
 .footer{
