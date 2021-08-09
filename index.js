@@ -112,6 +112,7 @@ particlesJS("particle-container", {
 });
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
+
 //option-1
 const subjects = $$('.menutren ul li');
 
@@ -121,6 +122,12 @@ subjects[0].onclick = ()=>{
 subjects[1].onclick = ()=>{
   window.scrollTo({ top: 1400, behavior: 'smooth' });
 }
+subjects[2].onclick = ()=>{
+  window.scrollTo({ top: 2100, behavior: 'smooth' });
+}
+
+
+
 // option-2
 const register_icon = $('.menutren--dang_nhap');
 const register_form = $('.register');
