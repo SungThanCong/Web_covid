@@ -230,18 +230,24 @@ nav.menutren{
     position:fixed;
     top:0;
     left: 0;
-    background-color:rgba(0, 0, 0, 0.219);
+    background-color:rgba(255, 255, 255, 0.486);
     display: none;
-   
+    z-index: 10;
 }
 .main--part--content--part--detail{
-    width: 500px;
+    width: 900px;
     background-image: url(img/part-2-nen.png);
+    background-size: cover;
     position: absolute;
-    left: 500px;
-    top: 200px;
-    padding: 10px;
+    left: 300px;
+    top: 80px;
+    padding: 45px;
+    padding-left: 100px;
     display: none;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    color: black;
 }
 .active{
     display: block;
