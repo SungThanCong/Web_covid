@@ -280,10 +280,10 @@ chuyen_btn.forEach(function(value,index){
   }
 })
 
-//hieu ung part-2
+// hieu ung part-2
 const ky_nang_p2 =$$('.main--part_2 .main--part--content ul div');
-const chi_tiet_ky_nang_p2_s = $('.main--part--content--parts--detail');
-const chi_tiet_ky_nang_p2 = $$('.main--part--content--part--detail');
+const chi_tiet_ky_nang_p2_s = $('.main--part--content--parts_2--detail');
+const chi_tiet_ky_nang_p2 = $$('.main--part--content--part_2--detail');
 
 var isPart2_active = false;
 
@@ -299,5 +299,29 @@ ky_nang_p2.forEach((value,key) => {
 chi_tiet_ky_nang_p2_s.onclick = ()=>{if(isPart2_active == true){
   chi_tiet_ky_nang_p2_s.classList.remove('active');
   isPart2_active = false;
+  $("body").style.overflowY = 'scroll';
+} }
+
+//hieu ung part-4
+
+const ky_nang_p4 =$$('.main--part_4 .main--part--content ul div');
+const chi_tiet_ky_nang_p4_s = $('.main--part--content--parts_4--detail');
+const chi_tiet_ky_nang_p4 = $$('.main--part--content--part_4--detail');
+
+var isPart4_active = false;
+
+ky_nang_p4.forEach((value,key) => {
+  value.onclick = ()=>{
+    chi_tiet_ky_nang_p4.forEach((value)=>{value.classList.remove('active')});
+    chi_tiet_ky_nang_p4[key].classList.add('active');
+    chi_tiet_ky_nang_p4_s.classList.add('active');
+    isPart4_active=true;
+    // $("body").style.overflowY = 'hidden';
+  }
+});
+
+chi_tiet_ky_nang_p4_s.onclick = ()=>{if(isPart4_active == true){
+  chi_tiet_ky_nang_p4_s.classList.remove('active');
+  isPart4_active = false;
   $("body").style.overflowY = 'scroll';
 } }
