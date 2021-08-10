@@ -117,7 +117,7 @@ const $$ = document.querySelectorAll.bind(document);
 const subjects = $$('.menutren ul li');
 
 subjects[0].onclick = ()=>{
-  window.scrollTo({ top: 700, behavior: 'smooth' });
+  window.scrollTo({ top: 690, behavior: 'smooth' });
 }
 subjects[1].onclick = ()=>{
   window.scrollTo({ top: 1400, behavior: 'smooth' });
@@ -132,7 +132,7 @@ subjects[4].onclick = ()=>{
   window.scrollTo({ top: 3650, behavior: 'smooth' });
 }
 subjects[5].onclick = ()=>{
-  window.scrollTo({ top: 4450, behavior: 'smooth' });
+  window.scrollTo({ top: 4470, behavior: 'smooth' });
 }
 // option-2
 const register_icon = $('.menutren--dang_nhap');
@@ -279,3 +279,25 @@ chuyen_btn.forEach(function(value,index){
     value.classList.add('cau_chuyen--active');
   }
 })
+
+//hieu ung part-2
+const ky_nang_p2 =$$('.main--part_2 .main--part--content ul div');
+const chi_tiet_ky_nang_p2_s = $('.main--part--content--parts--detail');
+const chi_tiet_ky_nang_p2 = $$('.main--part--content--part--detail');
+
+var isPart2_active = false;
+
+ky_nang_p2.forEach((value,key) => {
+  value.onclick = ()=>{
+    chi_tiet_ky_nang_p2.forEach((value)=>{value.classList.remove('active')});
+    chi_tiet_ky_nang_p2[key].classList.add('active');
+    chi_tiet_ky_nang_p2_s.classList.add('active');
+    isPart2_active=true;
+    $("body").style.overflowY = 'hidden';
+  }
+});
+chi_tiet_ky_nang_p2_s.onclick = ()=>{if(isPart2_active == true){
+  chi_tiet_ky_nang_p2_s.classList.remove('active');
+  isPart2_active = false;
+  $("body").style.overflowY = 'scroll';
+} }
