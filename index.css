@@ -182,8 +182,8 @@ nav.menutren{
     width: 700px;
     height: 300px;
     position: absolute;
-    right: 0;
-    top: 100px;
+    right: 70px;
+    top: 60px;
     font-size: 25px;
     font-family: 'Anton', sans-serif;
 }
@@ -332,15 +332,16 @@ nav.menutren{
     padding:30px;
 }
 .main--part_5 .main--part--content{
-    height: 500px;
+    height: 610px;
     width: 100%;
     background:linear-gradient(to right,orange,rgba(255, 223, 165, 0.925),orange,rgba(255, 223, 165, 0.925),orange,rgba(255, 223, 165, 0.925),orange);
-    padding-left: 250px;
+    padding-left: 400px;
     padding-right: 250px;
     word-wrap: break-word;
     position: relative;
 }
-.main--part--content--next{
+
+.main--part_5 .main--part--content--button_next{
     width: 100px;
     height: 100px;
     position: absolute;
@@ -354,19 +355,39 @@ nav.menutren{
     cursor: pointer;
     transition: 0.5s;
 }
-.main--part--content--next:hover{
+.main--part_5 .main--part--content--button_next:hover{
     background-color: white;
 }
-.main--part_5 .main--part--content--cau_chuyen_1 img{
-    float: left;
-    margin-right: 20px;
+.main--part--content--button ul {
+    position: absolute;
+    width: 120px;
+    bottom: 7%;
+    left: 50%;
+    margin-left: -50px;
+    display: flex;
+    justify-content: space-between;
+   
+ }
+.main--part--content--button ul li {
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 163, 25, 0.349);
+    opacity: 0.6;
+    list-style: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.6s;
+    border:solid 2px orange;
+ }
+ .main--part--content--button ul .cau_chuyen--active {
+    background-color: orange;
+    transition: 0.5s;
+ }
+.main--part--content--cau_chuyen_1 img{
+    display: none;
 }
-
-.main--part_5 .main--part--content--cau_chuyen_1 > p{
-    font-size: 20px;
-    padding-top: 10px;
-    font-weight: 600;
-    font-family: 'Roboto Slab', serif;
+.main--part_5 .cau_chuyen--active{
+    display: block;
 }
 .main--part_6{
     width: 100%;
@@ -395,7 +416,7 @@ nav.menutren{
 /* footer */
 .footer{
     width: 100%;
-    height: 600px;
+    height: 680px;
     background-image: url(https://f20-zpc.zdn.vn/2068415846517814914/6b1181616bbf9ce1c5ae.jpg);
     background-size: cover;
     padding: 100px;
@@ -586,3 +607,49 @@ nav.menutren{
     z-index: 2;
 }
 
+/* hieu-ung-dung-them */
+.bien-mat-ben-trai{
+    animation: bien-mat-ben-trai 1s forwards;
+ }
+ @-webkit-keyframes bien-mat-ben-trai{
+    from{
+       transform: translateX(0%);
+    }
+    to{
+       transform: translateX(-100%);
+    }
+ }
+ .di-vao-ben-phai{
+    animation: di-vao-ben-phai 1s forwards;
+ }
+ @-webkit-keyframes di-vao-ben-phai{
+    from{
+       transform: translateX(100%);
+    }
+    to{
+       transform: translateX(0%);
+    }
+ }
+ /*xử lý nút prev*/
+ .bien-mat-ben-phai{
+    animation: bien-mat-ben-phai 1s forwards;
+ }
+ @-webkit-keyframes bien-mat-ben-phai{
+    from{
+       transform: translateX(0%);
+    }
+    to{
+       transform: translateX(100%);
+    }
+ }
+ .di-vao-ben-trai{
+    animation: di-vao-ben-trai 1s forwards;
+ }
+ @-webkit-keyframes di-vao-ben-trai{
+    from{
+       transform: translateX(-100%);
+    }
+    to{
+       transform: translateX(0%);
+    }
+ }

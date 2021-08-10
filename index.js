@@ -261,3 +261,21 @@ window.addEventListener("scroll",function(){
         menu.style.top = `0px`;
     }
 });
+
+
+//hieu ung chuyen hinh part-5
+const chuyen_1 = $$('.main--part--content--cau_chuyen_1 .hinh');
+const chuyen_list_btn = $$('.main--part--content--button ul');
+const chuyen_btn = $$('.main--part--content--button ul li');
+chuyen_btn.forEach(function(value,index){
+  value.onclick = () =>{
+    chuyen_1.forEach(function(value2){
+      value2.classList.remove('cau_chuyen--active');
+    });
+    chuyen_btn.forEach(function(value3){
+      value3.classList.remove('cau_chuyen--active');
+    })
+    chuyen_1[index].classList.add('cau_chuyen--active');
+    value.classList.add('cau_chuyen--active');
+  }
+})
