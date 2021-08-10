@@ -293,13 +293,13 @@ ky_nang_p2.forEach((value,key) => {
     chi_tiet_ky_nang_p2[key].classList.add('active');
     chi_tiet_ky_nang_p2_s.classList.add('active');
     isPart2_active=true;
-    $("body").style.overflowY = 'hidden';
+
   }
 });
 chi_tiet_ky_nang_p2_s.onclick = ()=>{if(isPart2_active == true){
   chi_tiet_ky_nang_p2_s.classList.remove('active');
   isPart2_active = false;
-  $("body").style.overflowY = 'scroll';
+
 } }
 
 //hieu ung part-4
@@ -316,12 +316,12 @@ ky_nang_p4.forEach((value,key) => {
     chi_tiet_ky_nang_p4[key].classList.add('active');
     chi_tiet_ky_nang_p4_s.classList.add('active');
     isPart4_active=true;
-    // $("body").style.overflowY = 'hidden';
+
   }
 });
 
 chi_tiet_ky_nang_p4_s.onclick = ()=>{if(isPart4_active == true){
   chi_tiet_ky_nang_p4_s.classList.remove('active');
   isPart4_active = false;
-  $("body").style.overflowY = 'scroll';
+
 } }
