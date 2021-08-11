@@ -371,3 +371,12 @@ chi_tiet_ky_nang_p4_s.onclick = ()=>{if(isPart4_active == true){
   isPart4_active = false;
 
 } }
+
+
+//game part-6
+const man_hinh_game = $('.main--part--content--man_hinh')
+  setInterval(() => {
+    var virut = document.createElement("div");
+    virut.classList.add('.main--part--content--game--con_virut');
+    man_hinh_game.appendChild(btn);
+  }, 5000);

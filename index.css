@@ -40,23 +40,23 @@ nav.menutren{
 }
 .menutren ul li div{
   
-    font-weight: 800;
+    font-weight: bold;
     font-size: 17px;
     transition: 0.5s;
     cursor: pointer;
+    color: rgb(131, 45, 11);
 }
 .menutren ul li div:hover{
     color: red;
     
 }
 .menutren--ten_web{
-    width: 160px;
-    height: 100%;
-    text-align: center;
-    font-family: 'Oswald', sans-serif;
-    font-size: 20px;
-    text-shadow: 0px 5px 5px black;
-    /* color: rgba(0, 110, 255, 0.658); */
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 130px;
+    height: 80%;
+    background-image: url(img/ten-web.png);
+    background-size: cover;
     
 
 }
@@ -443,6 +443,13 @@ nav.menutren{
     font-family: 'Style Script', cursive;
     font-size: 30px;
     padding:30px;
+    color: rgb(141, 92, 0);
+     background-image: linear-gradient(to bottom, #bd6226, #65e0ff, #7edeb6, #bd6f26);
+    background-size: auto 250%;
+    transition: background-position 0.5s;
+        -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-position: 0 100%;
 }
 .main--part_5 .main--part--content{
     height: 610px;
@@ -543,9 +550,13 @@ nav.menutren{
 .main--part--content--man_hinh{
     width: 70%;
     height: 100%;
-    background: black;
+    background: white;
     margin:auto;
+    position: relative;
+    overflow: hidden;
 }
+
+
 /* footer */
 .footer{
     width: 100%;
@@ -789,4 +800,40 @@ nav.menutren{
 .active{
     display: block;
     animation: appear 1s;
+}
+
+/* game */
+.main--part--content--game--con_virut:nth-child(1){
+    position:absolute;
+    border-radius: 50%;
+    background-image: url(img/p6/corona.png);
+    background-size: cover;
+    /* --size: random(50) + 30 px; */
+    animation: chuyen-dong 10s infinite;
+    width: 200px;
+    height: 120px;
+    
+}
+.main--part--content--game--con_virut:nth-child(2){
+    position:absolute;
+    border-radius: 50%;
+    background-image: url(img/p6/corona.png);
+    background-size: cover;
+    /* --size: random(50) + 30 px; */
+    animation: chuyen-dong-2 10s infinite;
+    width: 200px;
+    height: 120px;
+    
+}
+@keyframes chuyen-dong{
+    100%{
+        transform: translate(70vw,50vh);
+    }
+
+}
+@keyframes chuyen-dong-2{
+    100%{
+        transform: translate(80vw,0vh);
+    }
+
 }
