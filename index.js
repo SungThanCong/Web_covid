@@ -280,6 +280,52 @@ chuyen_btn.forEach(function(value,index){
   }
 })
 
+
+const cau_chuyen_next = $('.main--part--content--button_next');
+const cau_chuyen_pre = $('.main--part--content--button_pre');
+
+cau_chuyen_next.onclick = () =>{
+  var cau_chuyen_active = $('.hinh.cau_chuyen--active');
+  var chuyen_btn_active =$('.btn.cau_chuyen--active');
+  if(cau_chuyen_active.nextElementSibling)
+  {
+
+    cau_chuyen_active.classList.remove('di-vao-ben-phai');
+    cau_chuyen_active.classList.remove('di-vao-ben-trai');
+    cau_chuyen_active.classList.remove('cau_chuyen--active');
+    chuyen_btn_active.classList.remove('cau_chuyen--active');
+
+    
+    cau_chuyen_active.nextElementSibling.classList.add('di-vao-ben-phai');
+
+    cau_chuyen_active.nextElementSibling.classList.add('cau_chuyen--active');
+    chuyen_btn_active.nextElementSibling.classList.add('cau_chuyen--active');
+ 
+
+
+  }
+}
+cau_chuyen_pre.onclick = () =>{
+  var cau_chuyen_active = $('.hinh.cau_chuyen--active');
+  var chuyen_btn_active =$('.btn.cau_chuyen--active');
+  if(cau_chuyen_active.previousElementSibling)
+  {
+    
+   
+  
+    cau_chuyen_active.classList.remove('di-vao-ben-phai');
+    cau_chuyen_active.classList.remove('di-vao-ben-trai');
+    cau_chuyen_active.classList.remove('cau_chuyen--active');
+    chuyen_btn_active.classList.remove('cau_chuyen--active');
+
+    cau_chuyen_active.previousElementSibling.classList.add('di-vao-ben-trai');
+
+    cau_chuyen_active.previousElementSibling.classList.add('cau_chuyen--active');
+    chuyen_btn_active.previousElementSibling.classList.add('cau_chuyen--active');
+  }
+}
+
+
 // hieu ung part-2
 const ky_nang_p2 =$$('.main--part_2 .main--part--content ul div');
 const chi_tiet_ky_nang_p2_s = $('.main--part--content--parts_2--detail');
