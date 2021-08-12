@@ -14,7 +14,7 @@ nav.menutren{
     width: 100%;
     height: 100px;
     /* background-color: rgba(241, 241, 241, 0.795); */
-    background: linear-gradient(to right,rgba(255, 255, 21, 0.678) , rgba(196, 44, 6, 0.678), rgba(231, 231, 31, 0.678) , rgba(196, 44, 6, 0.678),rgb(231, 231, 31,0.678) , rgba(196, 44, 6, 0.678));
+    background: linear-gradient(to right,rgba(255, 255, 12, 0.678) , rgba(223, 50, 7, 0.678), rgba(231, 231, 31, 0.678) , rgba(196, 44, 6, 0.678),rgb(231, 231, 31,0.678) , rgba(196, 44, 6, 0.678));
     display: flex;
     justify-content: space-between;
     border: solid 1px rgba(0, 0, 0, 0.486);
@@ -46,8 +46,9 @@ nav.menutren{
     cursor: pointer;
     color: black;
 }
-.menutren ul li div:hover{
-    color: red;
+.menutren ul li div:hover,
+.menutren--dang_nhap:hover{
+    color: white;
     
 }
 .menutren--ten_web{
@@ -58,7 +59,6 @@ nav.menutren{
     background-image: url(img/ten-web.png);
     background-size: cover;
     
-
 }
 .menutren--dang_nhap{
     width: 160px;
@@ -66,7 +66,7 @@ nav.menutren{
     text-align: center;
     padding-top: 20px;
     cursor: pointer;
-    
+    transition: 0.5s;
 }
 .dang_nhap--icon{
     font-size: 30px;
@@ -84,7 +84,7 @@ nav.menutren{
     width: 100%;
     height: 120%;
     position: absolute;
-    top: -100px;
+    top: -80px;
     left: 0;
 }
 
@@ -565,17 +565,19 @@ nav.menutren{
 .main--part--content--man_hinh{
     width: 70%;
     height: 100%;
-    background: black;
+    background: url(img/p6/nuituyet.jpg);
+    background-size: cover;
     margin:auto;
     position: relative;
     overflow: hidden;
+    cursor:url(img/p6/png.png),auto;
     
 }
 .main--part--content--man_hinh-giao-dien{
     width: 100%;
     height: 100%;
     text-align: center;
-   padding-top: 250px;
+    padding-top: 250px;
 }
 .main--part--content--man_hinh-giao-dien h2 {
     background-color: rgba(255, 113, 31, 0.705);
@@ -844,7 +846,6 @@ nav.menutren{
     border-radius: 50%;
     background-image: url(img/p6/corona.png);
     background-size: cover;
-    /* --size: random(50) + 30 px; */
     width: 200px;
     height: 120px;
     
@@ -852,10 +853,10 @@ nav.menutren{
 }
 .main--part--content--man_hinh-game--chi_so{
     display: flex;
-    color: rgba(255, 22, 22, 0.692);
+    color: red;
     position: absolute;
     bottom: 0;
-    right: 50px;
+    left:0;
     width: 500px;
     justify-content: space-around;
 }
@@ -917,6 +918,8 @@ gameover{
     margin: auto;
     margin-top: 270px;
     font-weight: 800;
+    text-align: center;
+    border-radius: 10px;
 }
 gameover:hover{
     background-color: ghostwhite;

@@ -377,13 +377,14 @@ chi_tiet_ky_nang_p4_s.onclick = ()=>{if(isPart4_active == true){
 const man_hinh_game = $('.main--part--content--man_hinh');
 const bat_dau = $('.main--part--content--man_hinh-giao-dien');
 const diem_so = $('.main--part--content--man_hinh-game--chi_so');
+const audio_tieng_no = $('#tieng_no');
+
 
 var game_bat_dau = false;
+
 bat_dau.onclick = ()=>{
   let diem_hien_tai =0;
   let so_luong_virut=0;
-  man_hinh_game.style.cursor = `url("img/p6/png.png"),auto;`
-
   bat_dau.classList.add('bat-dau');
   game_bat_dau=true;
   diem_so.innerHTML = `<h2>Điểm hiện tại: 0</h2><h2>Số lượng virut: 0</h2>`;
@@ -392,23 +393,141 @@ bat_dau.onclick = ()=>{
     var virut = document.createElement("div");
     virut.classList.add('main--part--content--game--con_virut');
 
-    virut.style.top = Math.floor(Math.random() * (600 - (-50) + 1) + -50)+ 'px';
-    virut.style.left = Math.floor(Math.random() * (600 - (-50) + 1) + -50)+ 'px';
+    virut.style.top = Math.floor(Math.random() * (550 - (-50) + 1) + -50)+ 'px';
+    virut.style.left = Math.floor(Math.random() * (550 - (-50) + 1) + -50)+ 'px';
     rad = Math.floor(Math.random()*9);
     virut.style.animation = `chuyen-dong-${rad} 5s infinite`;
-    virut.onclick = () => {virut.remove(); diem_hien_tai++;
-      so_luong_virut--;
-      diem_so.innerHTML = `<h2>Điểm hiện tại: ${diem_hien_tai}</h2><h2>Số lượng virut: ${so_luong_virut}</h2>`;};
-
-    man_hinh_game.appendChild(virut);
     so_luong_virut++;
+
+    virut.onclick = () => { diem_hien_tai++;
+      so_luong_virut--;
+      diem_so.innerHTML = `<h2>Điểm hiện tại: ${diem_hien_tai}</h2><h2>Số lượng virut: ${so_luong_virut}</h2>`;
+     virut.style.backgroundImage = `url('img/p6/no-unscreen.gif')`;
+     setTimeout(() => {
+      virut.remove();
+     }, 500);
+     audio_tieng_no.play();
+    };
+     
+    man_hinh_game.appendChild(virut);
+ 
     diem_so.innerHTML = `<h2>Điểm hiện tại: ${diem_hien_tai}</h2><h2>Số lượng virut: ${so_luong_virut}</h2>`;
 
-    if(man_hinh_game.childNodes.length == 100){
+    if(man_hinh_game.childNodes.length == 100+3){
       clearInterval(interval);
-      man_hinh_game.innerHTML = "<gameover>GAME OVER</gameover>";
+      man_hinh_game.innerHTML = `<gameover class="gameover">GAME OVER</gameover>`;
     }
-  }, 300);
-  
+  }, 500);
 }
  
+particlesJS("particle-container--game", {
+  "particles": {
+    "number": {
+      "value": 400,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#fff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 1,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 10,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": false,
+      "distance": 500,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 2
+    },
+    "move": {
+      "enable": true,
+      "speed": 6,
+      "direction": "bottom",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": false,
+        "mode": "bubble"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "repulse"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 0.5
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 4,
+        "duration": 0.3,
+        "opacity": 1,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+
+});
