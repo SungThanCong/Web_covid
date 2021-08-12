@@ -903,3 +903,15 @@ nav.menutren{
         transform: translate(0vw,-80vh);
     }
 }
+gameover{
+    display: block;
+    width: 200px;
+    color: red;
+    font-size: 30px;
+    margin: auto;
+    margin-top: 270px;
+    font-weight: 800;
+}
+gameover:hover{
+    background-color: ghostwhite;
+}

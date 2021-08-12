@@ -381,15 +381,21 @@ var game_bat_dau = false;
 bat_dau.onclick = ()=>{
   bat_dau.classList.add('bat-dau');
   game_bat_dau=true;
-   setInterval(() => {
+
+  var interval = setInterval(() => {
     var virut = document.createElement("div");
     virut.classList.add('main--part--content--game--con_virut');
     virut.style.top = Math.floor(Math.random() * (600 - (-50) + 1) + -50)+ 'px';
     virut.style.left = Math.floor(Math.random() * (600 - (-50) + 1) + -50)+ 'px';
     rad = Math.floor(Math.random()*9);
     virut.style.animation = `chuyen-dong-${rad} 5s infinite`;
+    virut.onclick = () => {virut.remove()};
     man_hinh_game.appendChild(virut);
-  }, 500);
-
+    if(man_hinh_game.childNodes.length == 100){
+      clearInterval(interval);
+      man_hinh_game.innerHTML = "<z>GAME OVER</z>";
+    }
+  }, 300);
+  
 }
  
