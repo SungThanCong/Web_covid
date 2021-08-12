@@ -457,6 +457,9 @@ nav.menutren{
     position: relative;
    
 }
+.main--part_5 .main--part--title h1{
+     font-family: 'Anton', sans-serif;
+}
 .main--part_5 .main--part--title--nen{
     background-image: url(img/p5/nen.png);
     background-size: cover;
@@ -556,6 +559,7 @@ nav.menutren{
     font-size: 35px;
     text-align: center;
     padding-top: 20px;
+    font-family: 'Anton', sans-serif;
 }
 .main--part_6 .main--part--content{
     width: 100%;
