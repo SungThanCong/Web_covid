@@ -374,9 +374,22 @@ chi_tiet_ky_nang_p4_s.onclick = ()=>{if(isPart4_active == true){
 
 
 //game part-6
-const man_hinh_game = $('.main--part--content--man_hinh')
-  setInterval(() => {
+const man_hinh_game = $('.main--part--content--man_hinh');
+const bat_dau = $('.main--part--content--man_hinh-giao-dien');
+
+var game_bat_dau = false;
+bat_dau.onclick = ()=>{
+  bat_dau.classList.add('bat-dau');
+  game_bat_dau=true;
+   setInterval(() => {
     var virut = document.createElement("div");
-    virut.classList.add('.main--part--content--game--con_virut');
-    man_hinh_game.appendChild(btn);
-  }, 5000);
+    virut.classList.add('main--part--content--game--con_virut');
+    virut.style.top = Math.floor(Math.random() * (600 - (-50) + 1) + -50)+ 'px';
+    virut.style.left = Math.floor(Math.random() * (600 - (-50) + 1) + -50)+ 'px';
+    rad = Math.floor(Math.random()*9);
+    virut.style.animation = `chuyen-dong-${rad} 5s infinite`;
+    man_hinh_game.appendChild(virut);
+  }, 500);
+
+}
+ 
