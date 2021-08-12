@@ -565,6 +565,7 @@ nav.menutren{
     margin:auto;
     position: relative;
     overflow: hidden;
+    cursor: url("img/p6/scope.jpg"),auto;
 }
 .main--part--content--man_hinh-giao-dien{
     width: 100%;
@@ -845,13 +846,14 @@ nav.menutren{
     
 
 }
-.main--part--content--game--con_virut:nth-child(1){
-    animation: chuyen-dong 10s;
-}
-.main--part--content--game--con_virut:nth-child(2){
-
-    animation: chuyen-dong-2 5s;
-    
+.main--part--content--man_hinh-game--chi_so{
+    display: flex;
+    color: rgba(255, 22, 22, 0.692);
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    width: 500px;
+    justify-content: space-around;
 }
 @keyframes chuyen-dong-0{
     100%{

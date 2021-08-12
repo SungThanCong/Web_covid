@@ -376,24 +376,37 @@ chi_tiet_ky_nang_p4_s.onclick = ()=>{if(isPart4_active == true){
 //game part-6
 const man_hinh_game = $('.main--part--content--man_hinh');
 const bat_dau = $('.main--part--content--man_hinh-giao-dien');
+const diem_so = $('.main--part--content--man_hinh-game--chi_so');
 
 var game_bat_dau = false;
 bat_dau.onclick = ()=>{
+  let diem_hien_tai =0;
+  let so_luong_virut=0;
+  man_hinh_game.style.cursor = `url("img/p6/png.png"),auto;`
+
   bat_dau.classList.add('bat-dau');
   game_bat_dau=true;
+  diem_so.innerHTML = `<h2>Điểm hiện tại: 0</h2><h2>Số lượng virut: 0</h2>`;
 
   var interval = setInterval(() => {
     var virut = document.createElement("div");
     virut.classList.add('main--part--content--game--con_virut');
+
     virut.style.top = Math.floor(Math.random() * (600 - (-50) + 1) + -50)+ 'px';
     virut.style.left = Math.floor(Math.random() * (600 - (-50) + 1) + -50)+ 'px';
     rad = Math.floor(Math.random()*9);
     virut.style.animation = `chuyen-dong-${rad} 5s infinite`;
-    virut.onclick = () => {virut.remove()};
+    virut.onclick = () => {virut.remove(); diem_hien_tai++;
+      so_luong_virut--;
+      diem_so.innerHTML = `<h2>Điểm hiện tại: ${diem_hien_tai}</h2><h2>Số lượng virut: ${so_luong_virut}</h2>`;};
+
     man_hinh_game.appendChild(virut);
+    so_luong_virut++;
+    diem_so.innerHTML = `<h2>Điểm hiện tại: ${diem_hien_tai}</h2><h2>Số lượng virut: ${so_luong_virut}</h2>`;
+
     if(man_hinh_game.childNodes.length == 100){
       clearInterval(interval);
-      man_hinh_game.innerHTML = "<z>GAME OVER</z>";
+      man_hinh_game.innerHTML = "<gameover>GAME OVER</gameover>";
     }
   }, 300);
   
