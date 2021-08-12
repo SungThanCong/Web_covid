@@ -605,6 +605,10 @@ nav.menutren{
     background-size: cover;
     padding: 100px;
 }
+.footer a {
+    text-decoration: none;
+    color: black;
+}
 .footer--tren{
     width: 700px;
     height: 150px;
