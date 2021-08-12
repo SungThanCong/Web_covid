@@ -387,7 +387,7 @@ bat_dau.onclick = ()=>{
   let so_luong_virut=0;
   bat_dau.classList.add('bat-dau');
   game_bat_dau=true;
-  diem_so.innerHTML = `<h2>Điểm hiện tại: 0</h2><h2>Số lượng virut: 0</h2>`;
+  diem_so.innerHTML = `<h2>Virut đã hạ: 0</h2><h2>Số lượng virut: 0</h2>`;
 
   var interval = setInterval(() => {
     var virut = document.createElement("div");
@@ -401,7 +401,7 @@ bat_dau.onclick = ()=>{
 
     virut.onclick = () => { diem_hien_tai++;
       so_luong_virut--;
-      diem_so.innerHTML = `<h2>Điểm hiện tại: ${diem_hien_tai}</h2><h2>Số lượng virut: ${so_luong_virut}</h2>`;
+      diem_so.innerHTML = `<h2>Virut đã hạ: ${diem_hien_tai}</h2><h2>Số lượng virut: ${so_luong_virut}</h2>`;
      virut.style.backgroundImage = `url('img/p6/no-unscreen.gif')`;
      setTimeout(() => {
       virut.remove();
@@ -411,7 +411,7 @@ bat_dau.onclick = ()=>{
      
     man_hinh_game.appendChild(virut);
  
-    diem_so.innerHTML = `<h2>Điểm hiện tại: ${diem_hien_tai}</h2><h2>Số lượng virut: ${so_luong_virut}</h2>`;
+    diem_so.innerHTML = `<h2>Virut đã hạ: ${diem_hien_tai}</h2><h2>Số lượng virut: ${so_luong_virut}</h2>`;
 
     if(man_hinh_game.childNodes.length == 100+3){
       clearInterval(interval);
