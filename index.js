@@ -405,7 +405,7 @@ bat_dau.onclick = ()=>{
      virut.style.backgroundImage = `url('img/p6/no-unscreen.gif')`;
      setTimeout(() => {
       virut.remove();
-     }, 500);
+     }, 300);
      audio_tieng_no.play();
     };
      
@@ -417,7 +417,7 @@ bat_dau.onclick = ()=>{
       clearInterval(interval);
       man_hinh_game.innerHTML = `<gameover class="gameover">GAME OVER</gameover>`;
     }
-  }, 500);
+  }, 300);
 }
  
 particlesJS("particle-container--game", {
@@ -555,35 +555,35 @@ function NhaySo (soCuoi,thoiGian,soBatDau,callBack){
 document.addEventListener('DOMContentLoaded',
   function () {
 
-      NhaySo(215560,3000,0,function(soHienTai){
+      NhaySo(215560,5000,0,function(soHienTai){
         const format_number = soHienTai.toLocaleString();
         $('.covid_so_ca_nhiem_trong_nuoc').innerText = format_number;
       })
-      NhaySo(140662,3000,0,function(soHienTai){
+      NhaySo(140662,5000,0,function(soHienTai){
         const format_number = soHienTai.toLocaleString();
         $('.covid_dang_dieu_tri_trong_nuoc').innerText = format_number;
       })
-      NhaySo(71497,3000,0,function(soHienTai){
+      NhaySo(71497,5000,0,function(soHienTai){
         const format_number = soHienTai.toLocaleString();
         $('.covid_khoi_trong_nuoc').innerText = format_number;
       })
-      NhaySo(3397,3000,0,function(soHienTai){
+      NhaySo(3397,5000,0,function(soHienTai){
         const format_number = soHienTai.toLocaleString();
         $('.covid_tu_vong_trong_nuoc').innerText = format_number;
       })
-      NhaySo(203404398,3000,0,function(soHienTai){
+      NhaySo(203404398,5000,0,function(soHienTai){
         const format_number = soHienTai.toLocaleString();
         $('.covid_so_ca_nhiem_the_gioi').innerText = format_number;
       })
-      NhaySo(16394806,3000,0,function(soHienTai){
+      NhaySo(16394806,5000,0,function(soHienTai){
         const format_number = soHienTai.toLocaleString();
         $('.covid_dang_dang_nhiem_the_gioi').innerText = format_number;
       })
-      NhaySo(182702650,3000,0,function(soHienTai){
+      NhaySo(182702650,5000,0,function(soHienTai){
         const format_number = soHienTai.toLocaleString();
         $('.covid_khoi_the_gioi').innerText = format_number;
       })
-      NhaySo(4306942,3000,0,function(soHienTai){
+      NhaySo(4306942,5000,0,function(soHienTai){
         const format_number = soHienTai.toLocaleString();
         $('.covid_tu_vong_the_gioi').innerText = format_number;
       })
