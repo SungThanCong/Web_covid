@@ -531,3 +531,61 @@ particlesJS("particle-container--game", {
   "retina_detect": true
 
 });
+
+/////////////////////////////// lam-hieu-ung-phu
+// HIeu ung nhay so part-1
+function NhaySo (soCuoi,thoiGian,soBatDau,callBack){
+  let soHienTai = soBatDau;
+  
+  function CapNhat(){
+    let soThem = Math.floor(soCuoi / (thoiGian/16.6666667));
+    soHienTai += soThem;
+    if (soHienTai >= soCuoi){
+      soHienTai = soCuoi;
+      callBack(soHienTai);
+    }
+    else{
+      callBack(soHienTai)
+      requestAnimationFrame(CapNhat);
+    }
+  }
+  requestAnimationFrame(CapNhat);
+}
+
+document.addEventListener('DOMContentLoaded',
+  function () {
+
+      NhaySo(215560,3000,0,function(soHienTai){
+        const format_number = soHienTai.toLocaleString();
+        $('.covid_so_ca_nhiem_trong_nuoc').innerText = format_number;
+      })
+      NhaySo(140662,3000,0,function(soHienTai){
+        const format_number = soHienTai.toLocaleString();
+        $('.covid_dang_dieu_tri_trong_nuoc').innerText = format_number;
+      })
+      NhaySo(71497,3000,0,function(soHienTai){
+        const format_number = soHienTai.toLocaleString();
+        $('.covid_khoi_trong_nuoc').innerText = format_number;
+      })
+      NhaySo(3397,3000,0,function(soHienTai){
+        const format_number = soHienTai.toLocaleString();
+        $('.covid_tu_vong_trong_nuoc').innerText = format_number;
+      })
+      NhaySo(203404398,3000,0,function(soHienTai){
+        const format_number = soHienTai.toLocaleString();
+        $('.covid_so_ca_nhiem_the_gioi').innerText = format_number;
+      })
+      NhaySo(16394806,3000,0,function(soHienTai){
+        const format_number = soHienTai.toLocaleString();
+        $('.covid_dang_dang_nhiem_the_gioi').innerText = format_number;
+      })
+      NhaySo(182702650,3000,0,function(soHienTai){
+        const format_number = soHienTai.toLocaleString();
+        $('.covid_khoi_the_gioi').innerText = format_number;
+      })
+      NhaySo(4306942,3000,0,function(soHienTai){
+        const format_number = soHienTai.toLocaleString();
+        $('.covid_tu_vong_the_gioi').innerText = format_number;
+      })
+  }
+)
