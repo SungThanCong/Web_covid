@@ -6,6 +6,7 @@
 }
 html{
     font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
 }
 
 /*menu */
@@ -720,9 +721,10 @@ nav.menutren{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(49, 49, 49, 0.432);
+    background-image: url(img/test_nen.jpg);
+    background-size: cover;
     display: none;
-    z-index: 3;
+    z-index: 10;
 }
 .register-active{
 
@@ -763,7 +765,7 @@ nav.menutren{
     position: fixed;
     left: 40%;
     top: 25%;
-    border-radius: 4px;
+    border-radius: 2px;
     border: 2px solid gray;
     display:none;
 }
@@ -771,6 +773,10 @@ nav.menutren{
     height: 550px;
     top: 15%;
 
+}
+.register-form > h2,
+.register-form-2 > h2{
+    font-family: 'Oswald', sans-serif;
 }
 .register-active{
     display: flex;
