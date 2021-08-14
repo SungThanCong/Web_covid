@@ -125,6 +125,7 @@ nav.menutren{
     padding-top:110px;
     padding-left: 15%;
     height: 700px;
+    display: none;
     
 }   
 .main--part--content--tinh_hinh_dich--trong_nuoc{
@@ -232,23 +233,47 @@ nav.menutren{
 }
 .main--part_1 .main--part--content--button_next{
     background-color: inherit;
-    top: 250px;
+    top: 280px;
     z-index: 7;
 }
 .main--part_1 .main--part--content--button_pre{
     background-color: inherit;
-    top:250px;
+    top: 280px;
     z-index: 7;
 }
 .main--part--content--tin_tuc_khac{
-    width: 800px;
-    top:170px;
-    left:280px;
+    width: 950px;
+    top:220px;
+    left:300px;
     position: absolute;
     z-index: 5;
+    display: none;
 }
-
-
+.main--part--content--tin_tuc_khac--hinh{
+    width: 500px;
+    height: 350px;
+    float: left;
+    margin-right: 20px;
+}
+.main--part--content--tin_tuc_khac--hinh > h4{
+    width: 100%;
+    background-color: rgb(197, 197, 197);
+    
+}
+.main--part--content--tin_tuc_khac--noi_dung > h1{
+    cursor: pointer;
+    transition: 0.3s;
+}
+.main--part--content--tin_tuc_khac--noi_dung > h1:hover{
+    color: red;
+}
+.xem-them{
+    cursor: pointer;
+    transition: 0.3s;
+}
+.xem-them:hover{
+    color: grey;
+}
 
 .main--part_2{
     display: block;

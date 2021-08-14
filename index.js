@@ -267,11 +267,39 @@ window.addEventListener("scroll",function(){
     }
 });
 
+//hiệu ứng đổi bản tin part-1
+const part_1_next = $('.main--part_1 .main--part--content--button_next');
+const part_1_pre = $('.main--part_1 .main--part--content--button_pre');
 
-//hieu ung chuyen hinh part-5
-const chuyen_1 = $$('.main--part--content--cau_chuyen_1 .hinh');
-const chuyen_list_btn = $$('.main--part--content--button ul');
-const chuyen_btn = $$('.main--part--content--button ul li');
+part_1_next.onclick = () =>{
+  const part_1_hienthi = $('.main--part_1 .main--part--content .active');
+  if(part_1_hienthi.nextElementSibling)
+  {
+    part_1_hienthi.nextElementSibling.classList.add('active');
+    part_1_hienthi.classList.remove('active');
+  }
+}
+
+part_1_pre.onclick = () =>{
+  const part_1_hienthi = $('.main--part_1 .main--part--content .active');
+  if(part_1_hienthi.previousElementSibling)
+  {
+    part_1_hienthi.previousElementSibling.classList.add('active');
+    part_1_hienthi.classList.remove('active');
+  }
+}
+
+$('.main--part_1 .main--part--content--tin_tuc_khac--noi_dung h1').onclick = ()=>{
+    window.open('https://ncov.moh.gov.vn/vi/web/guest/-/6847426-6841');
+}
+$('.main--part_1 .main--part--content--tin_tuc_khac--noi_dung .xem-them').onclick = ()=>{
+  window.open('https://ncov.moh.gov.vn/vi/web/guest/-/6847426-6841');
+}
+//hiệu ứng chuyển hình part-5
+const chuyen_1 = $$('.main--part_5 .main--part--content--cau_chuyen_1 .hinh');
+const chuyen_list_btn = $$('.main--part_5  .main--part--content--button ul');
+const chuyen_btn = $$('.main--part_5  .main--part--content--button ul li');
+
 chuyen_btn.forEach(function(value,index){
   value.onclick = () =>{
     chuyen_1.forEach(function(value2){
@@ -286,8 +314,8 @@ chuyen_btn.forEach(function(value,index){
 })
 
 
-const cau_chuyen_next = $('.main--part--content--button_next');
-const cau_chuyen_pre = $('.main--part--content--button_pre');
+const cau_chuyen_next = $('.main--part_5 .main--part--content--button_next');
+const cau_chuyen_pre = $('.main--part_5 .main--part--content--button_pre');
 
 cau_chuyen_next.onclick = () =>{
   var cau_chuyen_active = $('.hinh.cau_chuyen--active');
@@ -302,7 +330,6 @@ cau_chuyen_next.onclick = () =>{
 
     
     cau_chuyen_active.nextElementSibling.classList.add('di-vao-ben-phai');
-
     cau_chuyen_active.nextElementSibling.classList.add('cau_chuyen--active');
     chuyen_btn_active.nextElementSibling.classList.add('cau_chuyen--active');
  
@@ -315,16 +342,13 @@ cau_chuyen_pre.onclick = () =>{
   var chuyen_btn_active =$('.btn.cau_chuyen--active');
   if(cau_chuyen_active.previousElementSibling)
   {
-    
-   
-  
     cau_chuyen_active.classList.remove('di-vao-ben-phai');
     cau_chuyen_active.classList.remove('di-vao-ben-trai');
     cau_chuyen_active.classList.remove('cau_chuyen--active');
     chuyen_btn_active.classList.remove('cau_chuyen--active');
 
-    cau_chuyen_active.previousElementSibling.classList.add('di-vao-ben-trai');
 
+    cau_chuyen_active.previousElementSibling.classList.add('di-vao-ben-trai');
     cau_chuyen_active.previousElementSibling.classList.add('cau_chuyen--active');
     chuyen_btn_active.previousElementSibling.classList.add('cau_chuyen--active');
   }
