@@ -33,12 +33,10 @@
 </head>
 <body>
     <header>
-            <div class="main--banner_first">  
+            <div class="banner_first">  
                 <video autoplay loop muted>
                     <source type="video/mp4" src="img/nen.mp4">
                 </video>
-                 <!-- option 0 hiệu ứng -->
-                <div id="particle-container"></div>
             </div>
             
             <nav class ="menutren">
@@ -48,9 +46,9 @@
                     <!-- option-1 click và scroll  -->
                     <li><div>Tin tức</div></li>
                     <li><div>Nguyên tắc phòng bệnh</div></li>
-                    <li><div>Người hùng mùa covid</div></li>
-                    <li><div>Những câu chuyện nhỏ</div></li>
+                    <li><div>Ứng dụng hỗ trợ</div></li>
                     <li><div>Kỹ năng nên học</div></li>
+                    <li><div>Những câu chuyện nhỏ</div></li>
                     <li><div >Giải trí</div></li>
                 </ul>
                 <div class= "menutren--dang_nhap">
@@ -60,11 +58,9 @@
                 </div>
             </nav>
     </header>
-    
+    <!-- Thân web -->
     <div class="main">
-       
-        <div class="main--gioi_thieu">
-        </div>
+        <!-- phần 1 -->
         <div class="main--part main--part_1">
             <div class="main--part--title"><h1>TIN TỨC DỊCH BỆNH</h1></div>
             <div class="main--part--content">
@@ -121,13 +117,37 @@
                         <h3 class="xem-them">Xem thêm</h3>
                     </div>
                 </div>
-                      
+                <div class="main--part--content--tin_tuc_khac">
+                    <div class="main--part--content--tin_tuc_khac--hinh">
+                        <img src="img/p1/tintuc_2.png" alt="Hình ảnh" width="500px" height="300px">
+                        <h4>Thứ bảy, 14/08/2021 13:13</h4>
+                    </div>
+                    <div class="main--part--content--tin_tuc_khac--noi_dung">
+                        <h1>Bản tin dịch COVID-19 trưa 14/8: Quảng Ngãi, Nghệ An ghi nhận 43 ca dương tính với SARS-CoV-2</h1>
+                        <br>
+                        <p>Nhiều địa phương như Nghệ An, Quảng Ngãi đã ghi nhận thêm hàng chục ca dương tính với SARS-CoV-2 trong sáng ngày 14/8; Khoảng 10.000 cán bộ, nhân viên y tế chi viện cho miền Nam chống dịch, 2 triệu đồng/ người...</p>
+                        <h3 class="xem-them">Xem thêm</h3>
+                    </div>
+                </div>
+                <div class="main--part--content--tin_tuc_khac">
+                    <div class="main--part--content--tin_tuc_khac--hinh">
+                        <img src="img/p1/tintuc_3.png" alt="Hình ảnh" width="500px" height="300px">
+                        <h4>Thứ bảy, 14/08/2021 13:35</h4>
+                    </div>
+                    <div class="main--part--content--tin_tuc_khac--noi_dung">
+                        <h1>Người phụ nữ liên quan siêu thị Lê UK Store dương tính, Hà Nội thêm 21 ca nhiễm COVID-19 mới trong buổi sáng</h1>
+                        <br>
+                        <p>Trong 21 ca dương tính SARS-CoV-2 mới phát hiện trong sáng nay, có 3 người trong một gia đình ở quận Đống Đa, 1 người liên quan siêu thị Lê UK Store 79A Mai Hắc Đế...</p>
+                        <h3 class="xem-them">Xem thêm</h3>
+                    </div>
+                </div>
             </div>
             <div class="main--part--content--button">
                 <div class="main--part--content--button_next"> <i class="fas fa-chevron-right"></i></div>
                 <div class="main--part--content--button_pre"> <i class="fas fa-chevron-left"></i></i></div>
             </div>  
         </div>
+        <!-- phần 2 -->
         <div class="main--part main--part_2">
             <div class="main--part--title"><h1>Cách phòng ngừa và điều trị bệnh viêm phổi Virus Corona (COVID-19)</h1></div>
             <div class="main--part--content">
@@ -221,24 +241,66 @@ của người được cách ly nên cách xa giường ngủ của các thành
                 
             </div>
         </div>
+        <!-- phần 3 -->
         <div class="main--part main--part_3">
-            <div class="main--part--title"><h1>NGƯỜI HÙNG MÙA COVID</h1>
-            <p>Vinh danh những cá nhân đóng góp lớn trong công cuộc phòng chống dịch bệnh Covid-19</p></div>
+            <div class="main--part--title"><h1>ỨNG DỤNG HỖ TRỢ</h1>
+            <p>Giới thiệu những ứng dụng được yêu cầu, được khuyến khích sử dụng để hỗ trợ cho mỗi cá nhân trong thời kì dịch bệnh</p></div>
             <div class="main--part--content">
-                <div class="main--part--content--hinh_1">
-                    <img src="img/p3/VDD.png" alt="Phó thủ tướng chính phủ Việt Nam- VŨ ĐỨC ĐAM" width="280px" height="380px">
-                    Phó thủ tướng chính phủ Việt Nam <br>- VŨ ĐỨC ĐAM
+                <div class="main--part--content--gioi_thieu">
+                    <img src="img/p3/logo.png" alt=""width='400px' height="400px">
+                    <h1>NCOVI</h1>
                 </div>
-                <div class="main--part--content--hinh_1">
-                    <img src="img/p3/VDD.png" alt="Phó thủ tướng chính phủ Việt Nam- VŨ ĐỨC ĐAM" width="280px" height="380px">
-                    Phó thủ tướng chính phủ Việt Nam <br>- VŨ ĐỨC ĐAM
+                <div class="main--part--content--loi_ich--khai_bao" style="display:none">
+                    <img src="img/p5/chuyen_1.2.jpg" alt="" width="400px" height="400px" class="hinh">
                 </div>
-                <div class="main--part--content--hinh_1">
-                    <img src="img/p3/VDD.png" alt="Phó thủ tướng chính phủ Việt Nam- VŨ ĐỨC ĐAM" width="280px" height="380px">
-                    Phó thủ tướng chính phủ Việt Nam<br> - VŨ ĐỨC ĐAM
+                <div class="main--part--content--loi_ich--tin_tuc" style="display:none">
+                    <img src="img/p5/chuyen_1.3.jpg" alt="" width="400px" height="400px" class="hinh">
                 </div>
             </div>
         </div>
+        <!-- phần 4 -->
+        <div class="main--part main--part_4">
+            <div class="main--part--title"><h1>KĨ NĂNG</h1></div>
+            <div class="main--part--content">
+                <ul>
+                    <div>1. Học chơi nhạc cụ </div>
+                    <div>2. Học một ngôn ngữ khác</div>
+                    <div>3. Học một bộ môn rèn luyện sức khỏe</div>
+                    <div>4. Học nấu ăn </div>
+                    <div>5. Tìm hiểu chuyên ngành</div>
+                </ul>
+                <div class="main--part--content--parts_4--detail">
+                    <div class="main--part--content--part_4--detail">
+                       <h1> 1. Học chơi nhạc cụ</h1><br>
+Không bao giờ quá muộn để học chơi một loại nhạc cụ. Các nghiên cứu đã khẳng định rằng: chơi một loại nạc cụ thường xuyên giúp chúng mình trở nên thư thái, giảm căng thẳng. Nhất là trong khoảng thời gian đối mặt với nhiều khó khăn, và những thông tin tiêu cực trong mùa Cô Vy này. Ngoài ra, học chơi một nhạc cụ còn giúp chúng mình rèn luyện tính kiên nhẫn và thúc đẩy sự sáng tạo nữa đó!
+
+                    </div>
+                    <div class="main--part--content--part_4--detail">
+                        <h1>2. Học một ngôn ngữ khác</h1><br>
+                        Có thể lấy Tiếng Anh là một ví dụ.
+                        Tiếng Anh là ngôn ngữ được sử dụng rộng khắp trên toàn thế giới. Sở hữu một khả năng tiếng Anh tốt giúp bạn có cơ hội thăng tiến trong công việc và thậm chí có thể bước chân vào những tập đoàn đa quốc gia. Với sự phát triển của công nghệ và mạng xã hội, giờ đây việc học tập, rèn luyện tiếng Anh đã không còn quá khó khăn. Bạn có thể tìm thấy rất nhiều các khoá học trực tuyến từ bất kỳ trang web dạy tiếng Anh nào với mức phí vô cùng hợp lí, dao động từ 500.000 – 1.500.000 đồng mỗi tháng. Nhiều khóa học được thiết kế riêng theo trình độ và nhu cầu cá nhân của từng người nữa đấy!
+                    </div>
+                    <div class="main--part--content--part_4--detail">
+                        <h1>3.Duy trì các hoạt động thể dục một cách đều đặn</h1> <br>
+
+Chẳng cần phải đi đâu xa, bạn có thể tập thể dục mỗi ngày trong khuôn viên nhà. Thay vì đến công viên để chạy bộ mỗi sáng, hay đến phòng tập thể hình để có một vóc dáng khỏe đẹp. Hãy tập luyện tại nhà bằng các bài tập như chạy bộ trên máy, dạo xung quanh nhà, thử các bài tập yoga hay thể dục nhịp điệu, thậm chí là tập tạ mỗi ngày. Đừng quá lo sợ trong mùa dịch, hãy duy trì các vận động cá nhân để cải thiện sức khỏe và đời sống. Bạn sẽ cảm thấy Corona không đáng sợ bằng việc để bản thân ủ rũ và yếu ớt mỗi ngày. Đảm
+
+bảo sức khỏe và tăng cường đề kháng sẽ giúp bạn xây dựng bức tường ngăn chặn COVID-19 một cách đáng kể.
+                    </div>
+                    <div class="main--part--content--part_4--detail">
+                        <h1>4. Nấu ăn</h1><br>
+
+Đây là thời điểm tốt để chúng ta học cách chuẩn bị cho mình những món ăn ngon, bổ dưỡng thay vì gọi Now hay Grab Food. Nấu ăn cho bản thân mỗi ngày những bữa ăn lành mạnh tạo nên nền tảng vô cùng vững chắc cho cả thể chất và tinh thần. Khoảng thời gian nấu ăn cũng là lúc mình tạm quên đi những căng thẳng, âu lo, đầu óc được thưu giản, hoàn toàn trống rỗng và thả mình vào những hương vị đồ ăn hấp dẫn.
+                    </div>
+                    <div class="main--part--content--part_4--detail">
+                        <div class="blur"></div>
+                        <div class="nd"> <h1>5. Tìm hiểu chuyên ngành</h1><br>
+                            Hãy xác định hướng đi của bản thân. Trong thời điểm dịch bùng phát, việc hạn chế đi lại sẽ cho chúng ta nhiều thời gian rảnh, vì vậy hãy không ngừng tự tìm tòi, nghiên cứu về mục tiêu mình đặt ra. Để ngày càng hoàn thiện bản thân và đạt được những ước mơ to lớn của mình nhé!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- phần 5 -->
         <div class="main--part main--part_5">
             <div class="main--part--title">
                 <div class="main--part--title--chu">
@@ -269,53 +331,7 @@ của người được cách ly nên cách xa giường ngủ của các thành
                 </div>
             </div>
         </div>
-        <div class="main--part main--part_4">
-            <div class="main--part--title"><h1>KĨ NĂNG</h1></div>
-            <div class="main--part--content">
-                <ul>
-                    <div>1. Học chơi nhạc cụ </div>
-                    <div>2. Học một ngôn ngữ khác</div>
-                    <div>3. Học một bộ môn rèn luyện sức khỏe</div>
-                    <div>4. Học nấu ăn </div>
-                    <div>5. Tìm hiểu chuyên ngành</div>
-                </ul>
-                <div class="main--part--content--parts_4--detail">
-                    <div class="main--part--content--part_4--detail">
-                       <h1> 1. Học chơi nhạc cụ</h1><br>
-
-Không bao giờ quá muộn để học chơi một loại nhạc cụ. Các nghiên cứu đã khẳng định rằng: chơi một loại nạc cụ thường xuyên giúp chúng mình trở nên thư thái, giảm căng thẳng. Nhất là trong khoảng thời gian đối mặt với nhiều khó khăn, và những thông tin tiêu cực trong mùa Cô Vy này. Ngoài ra, học chơi một nhạc cụ còn giúp chúng mình rèn luyện tính kiên nhẫn và thúc đẩy sự sáng tạo nữa đó!
-                          
-                    </div>
-                    <div class="main--part--content--part_4--detail">
-                        <h1>2. Học một ngôn ngữ khác</h1><br>
-                        Có thể lấy Tiếng Anh là một ví dụ.
-                        Tiếng Anh là ngôn ngữ được sử dụng rộng khắp trên toàn thế giới. Sở hữu một khả năng tiếng Anh tốt giúp bạn có cơ hội thăng tiến trong công việc và thậm chí có thể bước chân vào những tập đoàn đa quốc gia. Với sự phát triển của công nghệ và mạng xã hội, giờ đây việc học tập, rèn luyện tiếng Anh đã không còn quá khó khăn. Bạn có thể tìm thấy rất nhiều các khoá học trực tuyến từ bất kỳ trang web dạy tiếng Anh nào với mức phí vô cùng hợp lí, dao động từ 500.000 – 1.500.000 đồng mỗi tháng. Nhiều khóa học được thiết kế riêng theo trình độ và nhu cầu cá nhân của từng người nữa đấy!
-                    </div>
-                    <div class="main--part--content--part_4--detail">
-                        <h1>3.Duy trì các hoạt động thể dục một cách đều đặn</h1> <br>
-
-Chẳng cần phải đi đâu xa, bạn có thể tập thể dục mỗi ngày trong khuôn viên nhà. Thay vì đến công viên để chạy bộ mỗi sáng, hay đến phòng tập thể hình để có một vóc dáng khỏe đẹp. Hãy tập luyện tại nhà bằng các bài tập như chạy bộ trên máy, dạo xung quanh nhà, thử các bài tập yoga hay thể dục nhịp điệu, thậm chí là tập tạ mỗi ngày. Đừng quá lo sợ trong mùa dịch, hãy duy trì các vận động cá nhân để cải thiện sức khỏe và đời sống. Bạn sẽ cảm thấy Corona không đáng sợ bằng việc để bản thân ủ rũ và yếu ớt mỗi ngày. Đảm
-
-bảo sức khỏe và tăng cường đề kháng sẽ giúp bạn xây dựng bức tường ngăn chặn COVID-19 một cách đáng kể.
-                    </div>
-                    <div class="main--part--content--part_4--detail">
-                        <h1>4. Nấu ăn</h1><br>
-
-Đây là thời điểm tốt để chúng ta học cách chuẩn bị cho mình những món ăn ngon, bổ dưỡng thay vì gọi Now hay Grab Food. Nấu ăn cho bản thân mỗi ngày những bữa ăn lành mạnh tạo nên nền tảng vô cùng vững chắc cho cả thể chất và tinh thần. Khoảng thời gian nấu ăn cũng là lúc mình tạm quên đi những căng thẳng, âu lo, đầu óc được thưu giản, hoàn toàn trống rỗng và thả mình vào những hương vị đồ ăn hấp dẫn.
-                    </div>
-                    <div class="main--part--content--part_4--detail">
-                       
-                        <div class="blur"></div>
-                        <div class="nd"> <h1>5. Tìm hiểu chuyên ngành</h1><br>
-                            Hãy xác định hướng đi của bản thân. Trong thời điểm dịch bùng phát, việc hạn chế đi lại sẽ cho chúng ta nhiều thời gian rảnh, vì vậy hãy không ngừng tự tìm tòi, nghiên cứu về mục tiêu mình đặt ra. Để ngày càng hoàn thiện bản thân và đạt được những ước mơ to lớn của mình nhé!</div>
-                    </div>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
+        <!-- phần 6 -->
         <div class="main--part main--part_6">
             <div class="main--part--title"><h1>GAME</h1></div>
             <div class="main--part--content">
@@ -333,8 +349,7 @@ bảo sức khỏe và tăng cường đề kháng sẽ giúp bạn xây dựng 
             </div>
         </div>
     </div>
-    
-
+    <!-- footer -->
     <div class="footer">
         <div class="footer--tren">
             <div class="footer--tren_thong_tin">
@@ -370,7 +385,6 @@ bảo sức khỏe và tăng cường đề kháng sẽ giúp bạn xây dựng 
                     </div>
                 </div>
                 <button type="button">Submit</button>
-               
         </div>
     </div>
 
@@ -431,7 +445,16 @@ bảo sức khỏe và tăng cường đề kháng sẽ giúp bạn xây dựng 
     <div class="scroll_to_head"><i class="fas fa-chevron-up"></i></div>
 
     <!-- option4--Gọi -->
-    <div class="call"><i class="fas fa-phone-volume"></i></div>
+    <div class="call">
+        <div class="call--icon">
+            <i class="fas fa-phone-volume"></i>
+        </div>
+        <div class="call--phone--number">
+            <a href="tel:0836 197 328">0836 197 328</a>
+        </div>
+    </div>
+    
+    
 </body>
 <script src="index.js"></script>
 </html>

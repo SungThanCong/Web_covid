@@ -1,119 +1,9 @@
 
-//option-0
-particlesJS("particle-container", {
-  "particles": {
-    "number": {
-      "value": 160,
-      "density": {
-        "enable": true,
-        "value_area": 800
-      }
-    },
-    "color": {
-      "value": "#ffffff"
-    },
-    "shape": {
-      "type": "circle",
-      "stroke": {
-        "width": 0,
-        "color": "#000000"
-      },
-      "polygon": {
-        "nb_sides": 5
-      },
-      "image": {
-        "src": "img/github.svg",
-        "width": 100,
-        "height": 100
-      }
-    },
-    "opacity": {
-      "value": 1,
-      "random": true,
-      "anim": {
-        "enable": true,
-        "speed": 1,
-        "opacity_min": 0,
-        "sync": false
-      }
-    },
-    "size": {
-      "value": 3,
-      "random": true,
-      "anim": {
-        "enable": false,
-        "speed": 4,
-        "size_min": 0.3,
-        "sync": false
-      }
-    },
-    "line_linked": {
-      "enable": false,
-      "distance": 150,
-      "color": "#ffffff",
-      "opacity": 0.4,
-      "width": 1
-    },
-    "move": {
-      "enable": true,
-      "speed": 22.09718024196413,
-      "direction": "top-left",
-      "random": true,
-      "straight": true,
-      "out_mode": "out",
-      "bounce": false,
-      "attract": {
-        "enable": false,
-        "rotateX": 600,
-        "rotateY": 600
-      }
-    }
-  },
-  "interactivity": {
-    "detect_on": "canvas",
-    "events": {
-      "onhover": {
-        "enable": true,
-        "mode": "bubble"
-      },
-      "onclick": {
-        "enable": true,
-        "mode": "repulse"
-      },
-      "resize": true
-    },
-    "modes": {
-      "grab": {
-        "distance": 400,
-        "line_linked": {
-          "opacity": 1
-        }
-      },
-      "bubble": {
-        "distance": 250,
-        "size": 0,
-        "duration": 2,
-        "opacity": 0,
-        "speed": 3
-      },
-      "repulse": {
-        "distance": 400,
-        "duration": 0.4
-      },
-      "push": {
-        "particles_nb": 4
-      },
-      "remove": {
-        "particles_nb": 2
-      }
-    }
-  },
-  "retina_detect": true
-});
+
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
-//option-1
+//option-1 - cuộn trang của menu
 const subjects = $$('.menutren ul li');
 
 var isClick = false;
@@ -139,7 +29,7 @@ subjects[4].onclick = ()=>{
 subjects[5].onclick = ()=>{
   window.scrollTo({ top: 4470, behavior: 'smooth' });
 }
-// option-2
+// option-2 - đăng nhập - đăng kí
 const register_icon = $('.menutren--dang_nhap');
 const register_form = $('.register');
 const form1 = $('.register-form');
@@ -164,7 +54,6 @@ var accounts = [];
 
 register_icon.onclick = () =>{
     if(isRegister == false){
-        // $("body").style.overflowY = 'hidden';
         if(isOpenRegister == false){
             register_form.style.display = 'block';
             register_form.classList.remove("register-inactive");
@@ -176,7 +65,6 @@ register_icon.onclick = () =>{
 }
 submit_thoat.forEach(element => {
     element.onclick = ()=>{
-    // $("body").style.overflowY = 'scroll';
         register_form.classList.remove("register-active");
         register_form.classList.add("register-inactive");
         setTimeout(() => {
@@ -247,7 +135,7 @@ submit2.onclick = () =>{
     }
 }
 
-// option-3
+// option-3- cuộn lên đầu trang
 const scroll_to_head = $('.scroll_to_head');
 
 scroll_to_head.onclick = () =>{
@@ -289,12 +177,27 @@ part_1_pre.onclick = () =>{
   }
 }
 
-$('.main--part_1 .main--part--content--tin_tuc_khac--noi_dung h1').onclick = ()=>{
+const tin_tuc_khac_tieu_de = $$('.main--part_1 .main--part--content--tin_tuc_khac--noi_dung h1');
+const xem_them = $$('.main--part_1 .main--part--content--tin_tuc_khac--noi_dung .xem-them');
+tin_tuc_khac_tieu_de[0].onclick = ()=>{
     window.open('https://ncov.moh.gov.vn/vi/web/guest/-/6847426-6841');
 }
-$('.main--part_1 .main--part--content--tin_tuc_khac--noi_dung .xem-them').onclick = ()=>{
+xem_them[0].onclick = ()=>{
   window.open('https://ncov.moh.gov.vn/vi/web/guest/-/6847426-6841');
 }
+tin_tuc_khac_tieu_de[1].onclick = ()=>{
+  window.open('https://ncov.moh.gov.vn/web/guest/-/6847426-6842');
+}
+xem_them[1].onclick = ()=>{
+window.open('https://ncov.moh.gov.vn/web/guest/-/6847426-6842');
+}
+tin_tuc_khac_tieu_de[2].onclick = ()=>{
+  window.open('https://ncov.moh.gov.vn/web/guest/-/6847426-6843');
+}
+xem_them[2].onclick = ()=>{
+window.open('https://ncov.moh.gov.vn/web/guest/-/6847426-6843');
+}
+
 //hiệu ứng chuyển hình part-5
 const chuyen_1 = $$('.main--part_5 .main--part--content--cau_chuyen_1 .hinh');
 const chuyen_list_btn = $$('.main--part_5  .main--part--content--button ul');
@@ -355,7 +258,7 @@ cau_chuyen_pre.onclick = () =>{
 }
 
 
-// hieu ung part-2
+// hieu ung mở từng mục chi tiết -- part_2
 const ky_nang_p2 =$$('.main--part_2 .main--part--content ul div');
 const chi_tiet_ky_nang_p2_s = $('.main--part--content--parts_2--detail');
 const chi_tiet_ky_nang_p2 = $$('.main--part--content--part_2--detail');
@@ -377,7 +280,7 @@ chi_tiet_ky_nang_p2_s.onclick = ()=>{if(isPart2_active == true){
 
 } }
 
-//hieu ung part-4
+//hieu ung mở từng mục chi tiết part_4
 
 const ky_nang_p4 =$$('.main--part_4 .main--part--content ul div');
 const chi_tiet_ky_nang_p4_s = $('.main--part--content--parts_4--detail');
@@ -402,7 +305,7 @@ chi_tiet_ky_nang_p4_s.onclick = ()=>{if(isPart4_active == true){
 } }
 
 
-//game part-6
+//game__ part-6
 const man_hinh_game = $('.main--part--content--man_hinh');
 const bat_dau = $('.main--part--content--man_hinh-giao-dien');
 const diem_so = $('.main--part--content--man_hinh-game--chi_so');
@@ -448,7 +351,7 @@ bat_dau.onclick = ()=>{
     }
   }, 300);
 }
- 
+// Hiệu ứng nền cho game part_6 dùng thư viện
 particlesJS("particle-container--game", {
   "particles": {
     "number": {
@@ -620,3 +523,15 @@ document.addEventListener('DOMContentLoaded',
   updateSoLieu
 );
 
+//hieu--ung_call
+
+$('.call--icon').onmouseover = () =>{
+    $('.call--phone--number').style.display = `block`;
+    $('.call--phone--number').style.animation = `phone_number_ani 1s`;
+}
+$('.call--icon').onmouseout = ()=>{
+  $('.call--phone--number').style.display = `none`;
+
+}
+
+// part--3
