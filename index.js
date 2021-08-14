@@ -116,8 +116,13 @@ const $$ = document.querySelectorAll.bind(document);
 //option-1
 const subjects = $$('.menutren ul li');
 
+var isClick = false;
 subjects[0].onclick = ()=>{
   window.scrollTo({ top: 690, behavior: 'smooth' });
+  if(!isClick){
+    updateSoLieu();
+    isClick = true;
+  }
 }
 subjects[1].onclick = ()=>{
   window.scrollTo({ top: 1400, behavior: 'smooth' });
@@ -552,40 +557,42 @@ function NhaySo (soCuoi,thoiGian,soBatDau,callBack){
   requestAnimationFrame(CapNhat);
 }
 
-document.addEventListener('DOMContentLoaded',
-  function () {
+function updateSoLieu () {
 
-      NhaySo(215560,5000,0,function(soHienTai){
-        const format_number = soHienTai.toLocaleString();
-        $('.covid_so_ca_nhiem_trong_nuoc').innerText = format_number;
-      })
-      NhaySo(140662,5000,0,function(soHienTai){
-        const format_number = soHienTai.toLocaleString();
-        $('.covid_dang_dieu_tri_trong_nuoc').innerText = format_number;
-      })
-      NhaySo(71497,5000,0,function(soHienTai){
-        const format_number = soHienTai.toLocaleString();
-        $('.covid_khoi_trong_nuoc').innerText = format_number;
-      })
-      NhaySo(3397,5000,0,function(soHienTai){
-        const format_number = soHienTai.toLocaleString();
-        $('.covid_tu_vong_trong_nuoc').innerText = format_number;
-      })
-      NhaySo(203404398,5000,0,function(soHienTai){
-        const format_number = soHienTai.toLocaleString();
-        $('.covid_so_ca_nhiem_the_gioi').innerText = format_number;
-      })
-      NhaySo(16394806,5000,0,function(soHienTai){
-        const format_number = soHienTai.toLocaleString();
-        $('.covid_dang_dang_nhiem_the_gioi').innerText = format_number;
-      })
-      NhaySo(182702650,5000,0,function(soHienTai){
-        const format_number = soHienTai.toLocaleString();
-        $('.covid_khoi_the_gioi').innerText = format_number;
-      })
-      NhaySo(4306942,5000,0,function(soHienTai){
-        const format_number = soHienTai.toLocaleString();
-        $('.covid_tu_vong_the_gioi').innerText = format_number;
-      })
-  }
-)
+  NhaySo(215560,3000,0,function(soHienTai){
+    const format_number = soHienTai.toLocaleString();
+    $('.covid_so_ca_nhiem_trong_nuoc').innerText = format_number;
+  })
+  NhaySo(140662,3000,0,function(soHienTai){
+    const format_number = soHienTai.toLocaleString();
+    $('.covid_dang_dieu_tri_trong_nuoc').innerText = format_number;
+  })
+  NhaySo(71497,3000,0,function(soHienTai){
+    const format_number = soHienTai.toLocaleString();
+    $('.covid_khoi_trong_nuoc').innerText = format_number;
+  })
+  NhaySo(3397,3000,0,function(soHienTai){
+    const format_number = soHienTai.toLocaleString();
+    $('.covid_tu_vong_trong_nuoc').innerText = format_number;
+  })
+  NhaySo(203404398,3000,0,function(soHienTai){
+    const format_number = soHienTai.toLocaleString();
+    $('.covid_so_ca_nhiem_the_gioi').innerText = format_number;
+  })
+  NhaySo(16394806,3000,0,function(soHienTai){
+    const format_number = soHienTai.toLocaleString();
+    $('.covid_dang_dang_nhiem_the_gioi').innerText = format_number;
+  })
+  NhaySo(182702650,3000,0,function(soHienTai){
+    const format_number = soHienTai.toLocaleString();
+    $('.covid_khoi_the_gioi').innerText = format_number;
+  })
+  NhaySo(4306942,3000,0,function(soHienTai){
+    const format_number = soHienTai.toLocaleString();
+    $('.covid_tu_vong_the_gioi').innerText = format_number;
+  })
+}
+document.addEventListener('DOMContentLoaded',
+  updateSoLieu
+);
+
