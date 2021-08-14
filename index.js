@@ -177,11 +177,25 @@ part_1_pre.onclick = () =>{
   }
 }
 
-$('.main--part_1 .main--part--content--tin_tuc_khac--noi_dung h1').onclick = ()=>{
+const tin_tuc_khac_tieu_de = $$('.main--part_1 .main--part--content--tin_tuc_khac--noi_dung h1');
+const xem_them = $$('.main--part_1 .main--part--content--tin_tuc_khac--noi_dung .xem-them');
+tin_tuc_khac_tieu_de[0].onclick = ()=>{
     window.open('https://ncov.moh.gov.vn/vi/web/guest/-/6847426-6841');
 }
-$('.main--part_1 .main--part--content--tin_tuc_khac--noi_dung .xem-them').onclick = ()=>{
+xem_them[0].onclick = ()=>{
   window.open('https://ncov.moh.gov.vn/vi/web/guest/-/6847426-6841');
+}
+tin_tuc_khac_tieu_de[1].onclick = ()=>{
+  window.open('https://ncov.moh.gov.vn/web/guest/-/6847426-6842');
+}
+xem_them[1].onclick = ()=>{
+window.open('https://ncov.moh.gov.vn/web/guest/-/6847426-6842');
+}
+tin_tuc_khac_tieu_de[2].onclick = ()=>{
+  window.open('https://ncov.moh.gov.vn/web/guest/-/6847426-6843');
+}
+xem_them[2].onclick = ()=>{
+window.open('https://ncov.moh.gov.vn/web/guest/-/6847426-6843');
 }
 
 //hiệu ứng chuyển hình part-5
@@ -509,3 +523,13 @@ document.addEventListener('DOMContentLoaded',
   updateSoLieu
 );
 
+//hieu--ung_call
+
+$('.call--icon').onmouseover = () =>{
+    $('.call--phone--number').style.display = `block`;
+    $('.call--phone--number').style.animation = `phone_number_ani 1s`;
+}
+$('.call--icon').onmouseout = ()=>{
+  $('.call--phone--number').style.display = `none`;
+
+}
