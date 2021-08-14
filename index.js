@@ -583,35 +583,35 @@ function NhaySo (soCuoi,thoiGian,soBatDau,callBack){
 
 function updateSoLieu () {
 
-  NhaySo(215560,3000,0,function(soHienTai){
+  NhaySo(255748,3000,0,function(soHienTai){
     const format_number = soHienTai.toLocaleString();
     $('.covid_so_ca_nhiem_trong_nuoc').innerText = format_number;
   })
-  NhaySo(140662,3000,0,function(soHienTai){
+  NhaySo(157918,3000,0,function(soHienTai){
     const format_number = soHienTai.toLocaleString();
     $('.covid_dang_dieu_tri_trong_nuoc').innerText = format_number;
   })
-  NhaySo(71497,3000,0,function(soHienTai){
+  NhaySo(92738,3000,0,function(soHienTai){
     const format_number = soHienTai.toLocaleString();
     $('.covid_khoi_trong_nuoc').innerText = format_number;
   })
-  NhaySo(3397,3000,0,function(soHienTai){
+  NhaySo(5088,3000,0,function(soHienTai){
     const format_number = soHienTai.toLocaleString();
     $('.covid_tu_vong_trong_nuoc').innerText = format_number;
   })
-  NhaySo(203404398,3000,0,function(soHienTai){
+  NhaySo(206987517,3000,0,function(soHienTai){
     const format_number = soHienTai.toLocaleString();
     $('.covid_so_ca_nhiem_the_gioi').innerText = format_number;
   })
-  NhaySo(16394806,3000,0,function(soHienTai){
+  NhaySo(17023179,3000,0,function(soHienTai){
     const format_number = soHienTai.toLocaleString();
     $('.covid_dang_dang_nhiem_the_gioi').innerText = format_number;
   })
-  NhaySo(182702650,3000,0,function(soHienTai){
+  NhaySo(185605709,3000,0,function(soHienTai){
     const format_number = soHienTai.toLocaleString();
     $('.covid_khoi_the_gioi').innerText = format_number;
   })
-  NhaySo(4306942,3000,0,function(soHienTai){
+  NhaySo(4358629,3000,0,function(soHienTai){
     const format_number = soHienTai.toLocaleString();
     $('.covid_tu_vong_the_gioi').innerText = format_number;
   })
