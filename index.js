@@ -535,6 +535,22 @@ $('.call--icon').onmouseout = ()=>{
 }
 
 // part--3
+const noi_dung_part_3 = $$('.main--part_3 .main--part--content_');
 setInterval(function(){
-  const noi_dung_part_3 = $$('.main--part--content--gioi_thieu').children;
-})
+  console.log(noi_dung_part_3);
+  const noi_dung_part_3_active = $('.main--part_3 .main--part--content .active');
+  noi_dung_part_3.forEach(function(value){
+    value.classList.remove('active');
+  });
+  if(noi_dung_part_3_active.nextElementSibling){
+    noi_dung_part_3_active.nextElementSibling.classList.add('active');
+  }
+  else noi_dung_part_3[0].classList.add('active');
+},3000);
+
+$('.main--part--content--loi_ich--tai_xuong .btn_1').onclick = () =>{
+  window.open("https://play.google.com/store/apps/details?id=com.vnptit.innovation.ncovi");
+}
+$('.main--part--content--loi_ich--tai_xuong .btn_2').onclick = () =>{
+  window.open("https://apps.apple.com/us/app/ncovi/id1501934178?ls=1");
+}
