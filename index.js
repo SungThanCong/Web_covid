@@ -102,7 +102,7 @@ submit1.onclick = () =>{
         isRegister = false;
     
         register_icon.innerHTML = 
-        `<span class="dang_nhap--icon" style="padding-top:10px;"><a>${username}</a></span>`;
+        `<div class="menutren--dang_nhap" style="padding-top: 16px;font-weight:800;padding-right: 17px;font-size: 20px;overflow:hidden;">User: <a>${username}</a></div>`;
         isRegister = true;
         $("body").style.overflow = 'scroll';
     }
