@@ -535,3 +535,6 @@ $('.call--icon').onmouseout = ()=>{
 }
 
 // part--3
+setInterval(function(){
+  const noi_dung_part_3 = $$('.main--part--content--gioi_thieu').children;
+})
